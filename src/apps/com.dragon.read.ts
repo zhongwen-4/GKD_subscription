@@ -547,5 +547,48 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 21,
+      name: '功能类-半自动去重短剧',
+      desc: '前提需手动长按短剧视频, ①点击[不感兴趣] ②选择[内容相似] ③选择[重复推荐] ④点击[提交]',
+      activityIds: '.pages.main.MainFragmentActivity',
+      rules: [
+        {
+          key: 0,
+          name: '①点击[不感兴趣]',
+          matches:
+            '@[clickable=true] > TextView[text="不感兴趣"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/34474701',
+          exampleUrls: 'https://e.gkd.li/69e569f1-ed88-4eae-8d0a-b73568a33b6c',
+        },
+        {
+          key: 1,
+          preKeys: [0],
+          name: '②选择[内容相似]',
+          matches:
+            '@[clickable=true] > TextView[text="内容相似"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/34475063',
+          exampleUrls: 'https://e.gkd.li/36f71e2c-3a63-49d3-92a5-5ed1105c5c76',
+        },
+        {
+          key: 2,
+          preKeys: [1],
+          name: '③选择[重复推荐]',
+          matches:
+            '@[clickable=true] > TextView[text="重复推荐"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/34475063',
+          exampleUrls: 'https://e.gkd.li/36f71e2c-3a63-49d3-92a5-5ed1105c5c76',
+        },
+        {
+          key: 3,
+          preKeys: [2],
+          name: '④点击[提交]',
+          matches:
+            '@[clickable=true] > TextView[text="提交"][visibleToUser=true]',
+          snapshotUrls: 'https://i.gkd.li/i/34475063',
+          exampleUrls: 'https://e.gkd.li/36f71e2c-3a63-49d3-92a5-5ed1105c5c76',
+        },
+      ],
+    },
   ],
 });
