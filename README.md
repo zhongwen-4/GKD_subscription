@@ -1,5 +1,7 @@
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=GKD第三方订阅规则&text2=💖%20GKD_subscription&width=800&height=350)](https://github.com/Lin-arm/GKD_subscription)
 
+> 当前 `dev` 分支用于测试规则；最终版本请查看 [main 分支](https://github.com/zhongwen-4/GKD_subscription/tree/main)。
+
 [![Release](https://img.shields.io/badge/发行版-v630-blue)](https://github.com/Lin-arm/GKD_subscription/releases/latest)
 [![已适配应用](https://img.shields.io/badge/已适配应用-1000-brightgreen)](./dist/README.md#应用规则)
 [![全局规则组](https://img.shields.io/badge/全局规则组-3-blueviolet)](./dist/README.md#全局规则)
