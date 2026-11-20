@@ -567,6 +567,7 @@ export default defineGkdApp({
           matches:
             '@[clickable=true][visibleToUser=true] > TextView[text^="展开"][text*="条回复"][visibleToUser=true] + [desc="arrow_footer"]',
           snapshotUrls: 'https://i.gkd.li/i/35147917',
+          exampleUrls: 'https://e.gkd.li/ad0e7dbf-4f8f-43a8-a8ae-850ca67351a1',
         },
         {
           key: 1,
@@ -575,6 +576,7 @@ export default defineGkdApp({
           matches:
             '@[clickable=true][visibleToUser=true] > TextView[text="展开更多"][visibleToUser=true] + [desc="arrow_footer"]',
           snapshotUrls: 'https://i.gkd.li/i/35147919',
+          exampleUrls: 'https://e.gkd.li/bb30e079-1b0a-449f-9e2d-927064899b23',
         },
       ],
     },
